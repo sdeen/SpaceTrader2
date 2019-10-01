@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.DialogScreenController">
+   <children>
+      <Label layoutX="57.0" layoutY="63.0" prefHeight="35.0" prefWidth="183.0" text=" Enter your name:" textFill="#ee0606">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="name" layoutX="247.0" layoutY="68.0" />
+      <Label layoutX="62.0" layoutY="135.0" text="Skill Points" textFill="#ee0606">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="154.0" layoutY="357.0" mnemonicParsing="false" onAction="#acceptButton" text="Accept" textFill="#ee0606" />
+      <Button layoutX="236.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" textFill="#ee0606" />
+      <Label layoutX="87.0" layoutY="165.0" prefHeight="26.0" prefWidth="47.0" text="Pilot" textFill="#ee0606" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="pilotLabel" contentDisplay="CENTER" layoutX="211.0" layoutY="163.0" prefHeight="26.0" prefWidth="21.0" textAlignment="CENTER" textFill="#ee0606" textOverrun="CENTER_ELLIPSIS" />
+      <Label layoutX="89.0" layoutY="201.0" prefHeight="25.0" prefWidth="50.0" text="Fighter" textFill="#ee0606" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="fighterLabel" contentDisplay="CENTER" layoutX="211.0" layoutY="204.0" prefHeight="26.0" prefWidth="21.0" textAlignment="CENTER" textFill="#ee0606" textOverrun="CENTER_ELLIPSIS" />
+      <Button layoutX="280.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#decSkillFighter" prefHeight="26.0" prefWidth="26.0" style="-: ;" text="-" textAlignment="CENTER" textFill="#fb0101" AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="201.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="91.0" layoutY="241.0" prefHeight="25.0" prefWidth="47.0" text="Trader" textFill="#ee0606" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="traderLabel" contentDisplay="CENTER" layoutX="211.0" layoutY="244.0" prefHeight="26.0" prefWidth="21.0" textAlignment="CENTER" textFill="#ee0606" textOverrun="CENTER_ELLIPSIS" />
+      <Button layoutX="281.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#decSkillTrader" prefHeight="26.0" prefWidth="26.0" style="-: ;" text="-" textAlignment="CENTER" textFill="#fb0101" AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="241.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="pilotAdd2" layoutX="172.0" layoutY="241.0" mnemonicParsing="false" onMouseClicked="#addSkillTrader" prefHeight="25.0" prefWidth="21.0" text="+" textAlignment="CENTER" textFill="#eb0101" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="241.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="88.0" layoutY="282.0" prefHeight="25.0" prefWidth="63.0" text="Engineer" textFill="#ee0606" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="engLabel" contentDisplay="CENTER" layoutX="214.0" layoutY="283.0" prefHeight="25.0" prefWidth="21.0" textAlignment="CENTER" textFill="#ee0606" textOverrun="CENTER_ELLIPSIS" />
+      <Button fx:id="pilotAdd21" layoutX="172.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#addSkillEngineer" prefHeight="25.0" prefWidth="21.0" text="+" textFill="#eb0101" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="281.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="283.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#decSkillEngineer" prefHeight="26.0" prefWidth="21.0" style="-: ;" text="-" textAlignment="CENTER" textFill="#fb0101" AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="281.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="90.0" layoutY="320.0" prefHeight="25.0" prefWidth="62.0" text="Investor " textFill="#ee0606" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="252.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#decSkillInvestor" prefHeight="26.0" prefWidth="26.0" style="-: ;" text="-" textAlignment="CENTER" textFill="#fb0101" AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="321.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="investorLabel" contentDisplay="CENTER" layoutX="216.0" layoutY="321.0" prefHeight="26.0" prefWidth="21.0" textAlignment="CENTER" textFill="#ee0606" textOverrun="CENTER_ELLIPSIS" />
+      <Button fx:id="pilotAdd22" layoutX="172.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#addSkillInvestor" prefHeight="25.0" prefWidth="21.0" text="+" textFill="#eb0101" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="321.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="pilotAdd221" layoutX="172.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#addPilotSkill" prefHeight="25.0" prefWidth="21.0" text="+" textFill="#eb0101">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="pilotAdd222" layoutX="170.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#addSkillFighter" prefHeight="25.0" prefWidth="21.0" text="+" textFill="#eb0101">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="253.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#decPilotSkill" prefHeight="26.0" prefWidth="26.0" style="-: ;" text="-" textAlignment="CENTER" textFill="#fb0101">
+         <font>
+            <Font name="Lucida Bright Regular" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

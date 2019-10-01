@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.UpgradeShipController">
+   <children>
+      <Label layoutX="172.0" layoutY="13.0" prefHeight="46.0" prefWidth="252.0" text="Buy Upagrade" textAlignment="CENTER" textFill="#ff0404">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="64.0" prefHeight="25.0" prefWidth="81.0" text="Weapons:" textFill="#f20202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="157.0" prefHeight="25.0" prefWidth="81.0" text="Shields:" textFill="#f20202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="284.0" prefHeight="25.0" prefWidth="81.0" text="Gadgets:" textFill="#f20202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="214.0" layoutY="64.0" mnemonicParsing="false" onAction="#pulseLaserButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Pulse Lasers" textFill="#ee0202" AnchorPane.leftAnchor="214.0" />
+      <Button layoutX="212.0" layoutY="106.0" mnemonicParsing="false" onAction="#militarytLaserButton" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Military Lasers" textFill="#ee0202" AnchorPane.leftAnchor="212.0" />
+      <Button layoutX="388.0" layoutY="64.0" mnemonicParsing="false" onAction="#beamLaserButton" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Beam Lasers" textFill="#ee0202" AnchorPane.leftAnchor="388.0" />
+      <Button layoutX="212.0" layoutY="156.0" mnemonicParsing="false" onAction="#energyShieldButton" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Energy Shields " textFill="#ee0202" AnchorPane.leftAnchor="212.0" />
+      <Button layoutX="388.0" layoutY="156.0" mnemonicParsing="false" onAction="#reflectiveShieldButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Reflective Shields" textFill="#ee0202" AnchorPane.leftAnchor="388.0" />
+      <Button layoutX="216.0" layoutY="279.0" mnemonicParsing="false" onAction="#fiveCargoBayButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="5 Extra Cargo Bays" textFill="#ee0202" AnchorPane.leftAnchor="216.0" />
+      <Button layoutX="290.0" layoutY="359.0" mnemonicParsing="false" onAction="#clockingDeviceButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Cloaking Device" textFill="#ee0202" AnchorPane.leftAnchor="290.0" />
+      <Button layoutX="388.0" layoutY="322.0" mnemonicParsing="false" onAction="#autoRepairButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Auto-Repair System" textFill="#ee0202" AnchorPane.leftAnchor="388.0" />
+      <Button layoutX="388.0" layoutY="281.0" mnemonicParsing="false" onAction="#targettingSystemButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Targeting System " textFill="#ee0202" AnchorPane.leftAnchor="388.0" />
+      <Button layoutX="216.0" layoutY="320.0" mnemonicParsing="false" onAction="#NavigatingSystemButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Navigating System" textFill="#ee0202" AnchorPane.leftAnchor="216.0" />
+      <Button layoutX="217.0" layoutY="218.0" mnemonicParsing="false" onAction="#escapePodButton" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: maroon;" text="Installed Escape Pod" textFill="#ee0202" />
+      <Label layoutX="111.0" layoutY="220.0" prefHeight="25.0" prefWidth="103.0" text="Escape Pod:" textFill="#f20202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutY="362.0" mnemonicParsing="false" onAction="#goBackToShipYard" prefHeight="37.0" prefWidth="173.0" text="Go Back Ship Yard" textFill="#f20404" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

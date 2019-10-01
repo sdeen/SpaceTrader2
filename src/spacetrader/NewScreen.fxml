@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.NewScreenController">
+   <children>
+      <AnchorPane layoutX="-13.0" layoutY="-57.0" AnchorPane.bottomAnchor="0.5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="-158.0" layoutY="37.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="1346.0" fitWidth="1140.0" layoutX="115.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@space.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="startButton" layoutX="345.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="55.0" prefWidth="477.0" style="-fx-background-color: transparent; -fx-border-radius: 20; -fx-border-style: solid; -fx-border-color: green;" text="START" textFill="#65ff0c">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="374.0" layoutY="64.0" prefHeight="71.0" prefWidth="523.0" text="SPACE TRADER" textAlignment="CENTER" textFill="#65ff0c">
+                     <font>
+                        <Font name="System Bold Italic" size="49.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="354.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleContinueButton" prefHeight="55.0" prefWidth="477.0" style="-fx-background-color: transparent; -fx-border-radius: 20; -fx-border-style: solid; -fx-border-color: green;" text="CONTINUE..." textFill="#65ff0c">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

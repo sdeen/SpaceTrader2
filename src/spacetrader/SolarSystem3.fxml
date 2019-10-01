@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.SolarSystem3Controller">
+   <children>
+      <AnchorPane layoutY="-9.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@market.jpg" />
+               </image>
+            </ImageView>
+            <Circle fx:id="tsukuyomiPlanet" layoutX="553.0" layoutY="223.0" onMouseMoved="#showInfo" radius="67.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#53879a" />
+                        <Stop color="#b59b34" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="507.0" layoutY="206.0" mnemonicParsing="false" onAction="#tsukuyomiButton" style="-fx-background-color: transparent;" text="Tsukuyomi" textFill="#0dd9bf" underline="true" />
+            <Circle fx:id="amaterasuPlanet" layoutX="352.0" layoutY="255.0" onMouseMoved="#showInfo" radius="55.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1f50ff61" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="309.0" layoutY="246.0" mnemonicParsing="false" onAction="#amaterasuButton" style="-fx-background-color: transparent;" text="Amaterasu" textFill="#e80606" underline="true" />
+            <Circle fx:id="susanooPlanet" layoutX="576.0" layoutY="428.0" onMouseMoved="#showInfo" radius="60.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#bcc4d6" />
+                        <Stop color="#0a6b17" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="544.0" layoutY="419.0" mnemonicParsing="false" onAction="#susanooButton" style="-fx-background-color: transparent;" text="Susanoo" textFill="#dee1db" underline="true" />
+            <Button layoutX="379.0" layoutY="528.0" mnemonicParsing="false" onAction="#goBackToUniverse" prefHeight="48.0" prefWidth="290.0" text="Go Back to Universe" textFill="#e10404" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Circle fx:id="izanamiPlanet" layoutX="398.0" layoutY="481.0" onMouseMoved="#showInfo" radius="48.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#1fffec" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="363.0" layoutY="476.0" mnemonicParsing="false" onAction="#izanamiButton" style="-fx-background-color: transparent;" text="Izanami" textFill="#b307bc" underline="true" />
+            <Label fx:id="infoLabel" layoutX="708.0" layoutY="19.0" prefHeight="291.0" prefWidth="344.0" textFill="#69c2eb" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Circle fx:id="izanagiPlanet" layoutX="291.0" layoutY="400.0" onMouseMoved="#showInfo" radius="48.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e12c08" />
+                        <Stop color="#e12c08" offset="0.007407407407407408" />
+                        <Stop color="#070606" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="259.0" layoutY="388.0" mnemonicParsing="false" onAction="#izanagiButton" style="-fx-background-color: transparent;" text="Izanagi" textFill="#f5ea3d" underline="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

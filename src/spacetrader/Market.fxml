@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.MarketController">
+   <children>
+      <Label fx:id="printR" layoutX="470.0" layoutY="104.0" prefHeight="235.0" prefWidth="241.0" style="-fx-background-color: ;" textFill="#fff400" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="104.0">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="79.0" layoutY="55.0" mnemonicParsing="false" onAction="#buyFur" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Furs" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="88.0" layoutY="118.0" mnemonicParsing="false" onAction="#buyFood" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Food" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="88.0" layoutY="150.0" mnemonicParsing="false" onAction="#buyOre" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Ore" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="88.0" layoutY="186.0" mnemonicParsing="false" onAction="#buyGames" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Games" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="88.0" layoutY="218.0" mnemonicParsing="false" onAction="#buyFirearms" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Firearms" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="88.0" layoutY="250.0" mnemonicParsing="false" onAction="#buyMedicine" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Medicine" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="80.0" layoutY="86.0" mnemonicParsing="false" onAction="#buyWater" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Water" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="88.0" layoutY="281.0" mnemonicParsing="false" onAction="#buyNarcotics" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Narcotics" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="92.0" layoutY="314.0" mnemonicParsing="false" onAction="#buyRobots" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Buy Robots" textFill="LAVENDER" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="58.0" mnemonicParsing="false" onAction="#sellWater" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Water" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="89.0" mnemonicParsing="false" onAction="#sellFur" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Furs" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="121.0" mnemonicParsing="false" onAction="#sellFood" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Food" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="153.0" mnemonicParsing="false" onAction="#sellOre" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Ore" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="189.0" mnemonicParsing="false" onAction="#sellGames" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Games" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="221.0" mnemonicParsing="false" onAction="#sellFirearms" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Firearms" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="253.0" mnemonicParsing="false" onAction="#sellMedicine" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Medicine" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="284.0" mnemonicParsing="false" onAction="#sellNarcotics" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Narcotics" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="328.0" layoutY="315.0" mnemonicParsing="false" onAction="#sellRobots" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-radius: 60; -fx-background-radius: 60; -fx-border-color: #E6E6FA;" text="Sell Robots" textFill="LAVENDER" AnchorPane.leftAnchor="328.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="6.0" layoutY="345.0" mnemonicParsing="false" onAction="#goBackToUniverse" prefHeight="30.0" prefWidth="284.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" text="Go Back to Universe" textFill="#fff400" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Droid Serif" size="24.0" />
+         </font></Button>
+      <Text fill="#18eb0c" layoutX="77.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Goods" textAlignment="CENTER" wrappingWidth="178.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#18eb0c" layoutX="308.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sell Goods" textAlignment="CENTER" wrappingWidth="178.0" AnchorPane.topAnchor="10.009765625">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="282.0" layoutY="351.0" mnemonicParsing="false" onAction="#goBackToShipYard" prefHeight="30.0" prefWidth="284.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" text="Go To Ship Yard" textFill="#fff400" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font name="Droid Serif" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

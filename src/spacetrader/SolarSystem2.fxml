@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.SolarSystem2Controller">
+   <children>
+      <AnchorPane style="-fx-background-color: black;">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@market.jpg" />
+               </image>
+            </ImageView>
+            <Circle fx:id="gyukiPlanet" layoutX="549.0" layoutY="330.0" onMouseMoved="#showInfo" radius="68.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#e1a604" />
+                        <Stop color="#b94b4b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="513.0" layoutY="316.0" mnemonicParsing="false" onAction="#namekButton" style="-fx-background-color: transpanet;" text="Gyuki" textAlignment="CENTER" textFill="#db2e0b" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Ellipse fx:id="isobuPlanet" layoutX="348.0" layoutY="442.0" onMouseMoved="#showInfo" radiusX="76.0" radiusY="48.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b91fff" />
+                        <Stop color="#0c63c4" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Button layoutX="308.0" layoutY="429.0" mnemonicParsing="false" onAction="#shenronButton" style="-fx-background-color: transparent;" text="Isobu" textFill="#ff4200" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Circle fx:id="kaiPlanet" layoutX="135.0" layoutY="316.0" onMouseMoved="#showInfo" radius="68.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#04bbe0" />
+                        <Stop color="#e4dbdb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="108.0" layoutY="306.0" mnemonicParsing="false" onAction="#kaiButton" style="-fx-background-color: transparent;" text="Saiken" textFill="#1800ff" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Ellipse fx:id="kuramaPlanet" layoutX="346.0" layoutY="159.0" onMouseMoved="#showInfo" radiusX="76.0" radiusY="48.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b91fff" />
+                        <Stop color="#0c63c4" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Button layoutX="315.0" layoutY="146.0" mnemonicParsing="false" onAction="#vegetaButton" style="-fx-background-color: transparent;" text="Kurama" textFill="#032824" underline="true" />
+            <Label fx:id="infoLabel" layoutX="658.0" layoutY="5.0" prefHeight="259.0" prefWidth="361.0" textFill="#0bfa07" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="379.0" layoutY="528.0" mnemonicParsing="false" onAction="#goBackToUniverse" prefHeight="38.0" prefWidth="197.0" text="Go Back to Universe" textFill="#e40303" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Circle fx:id="shukakuPlanet" fill="DODGERBLUE" layoutX="592.0" layoutY="566.0" onMouseMoved="#showInfo" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="521.0" layoutY="551.0" mnemonicParsing="false" onAction="#gokuButton" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="Shukaku" textFill="#dd0505" underline="true">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

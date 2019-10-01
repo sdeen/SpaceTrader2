@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.ShipYardController">
+   <children>
+      <AnchorPane layoutX="-12.0" layoutY="-18.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="125.0" layoutY="104.0" text="WELCOME TO THE SHIPYARD" textFill="#05cd15">
+                     <font>
+                        <Font name="AdobeHebrew-Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="206.0" layoutY="645.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: green;" text="Repair Ship" textFill="#efff00" AnchorPane.bottomAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+                  <Button layoutX="124.0" layoutY="314.0" mnemonicParsing="false" onAction="#fleaButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Flea" textFill="#eaff00" AnchorPane.leftAnchor="124.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="397.0" layoutY="150.0" mnemonicParsing="false" onAction="#gnatButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Gnat" textFill="#eaff00" AnchorPane.leftAnchor="350.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="397.0" layoutY="191.0" mnemonicParsing="false" onAction="#fireflyButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Firefly" textFill="#eaff00" AnchorPane.leftAnchor="350.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="393.0" layoutY="232.0" mnemonicParsing="false" onAction="#mosquitoButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Mosquito" textFill="#eaff00" AnchorPane.leftAnchor="350.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="397.0" layoutY="273.0" mnemonicParsing="false" onAction="#bumblebeeButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Bumblebee" textFill="#eaff00" AnchorPane.leftAnchor="350.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="397.0" layoutY="314.0" mnemonicParsing="false" onAction="#beetleButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Beetle" textFill="#eaff00" AnchorPane.leftAnchor="350.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="124.0" layoutY="191.0" mnemonicParsing="false" onAction="#hornetButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Hornet" textFill="#eaff00" AnchorPane.leftAnchor="124.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="124.0" layoutY="232.0" mnemonicParsing="false" onAction="#grasshopperButton" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Grasshopper" textFill="#eaff00" AnchorPane.leftAnchor="124.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="124.0" layoutY="273.0" mnemonicParsing="false" onAction="#termiteButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Termite" textFill="#eaff00" AnchorPane.leftAnchor="124.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="124.0" layoutY="150.0" mnemonicParsing="false" onAction="#waspButton" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: yellow; -fx-border-radius: 20;" text="Wasp" textFill="#eaff00" AnchorPane.leftAnchor="124.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutY="645.0" mnemonicParsing="false" onAction="#goBackToUniverse" prefHeight="51.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: green;" text="Go Back To Universe" textFill="#efff00">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="412.0" layoutY="645.0" mnemonicParsing="false" onAction="#goToBuyUpgrades" prefHeight="51.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-style: solid; -fx-border-color: green;" text="Buy Upgrade" textFill="#efff00">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

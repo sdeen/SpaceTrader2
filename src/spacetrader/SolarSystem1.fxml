@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.SolarSystem1Controller">
+   <children>
+      <AnchorPane layoutX="-19.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@market.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="264.0" layoutY="495.0" mnemonicParsing="false" onAction="#goBackToUniverse" prefHeight="42.0" prefWidth="255.0" text="Go Back to Universe" textFill="#c45b49" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Circle fx:id="byakuganPlanet" layoutX="414.0" layoutY="134.0" onMouseMoved="#showInfo" radius="85.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.topAnchor="49.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#043bb0" />
+                        <Stop color="#6198a8" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button layoutX="337.0" layoutY="124.0" mnemonicParsing="false" onAction="#byakuganButton" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Byakugan" textFill="#ffd200" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Ellipse fx:id="rinneganPlanet" layoutX="189.0" layoutY="328.0" onMouseMoved="#showInfo" radiusX="96.0" radiusY="40.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#13830d" />
+                        <Stop color="#6c7964" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Button layoutX="109.0" layoutY="311.0" mnemonicParsing="false" onAction="#rinneganButton" prefHeight="29.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Rinnegan" textFill="#0004ff" underline="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Ellipse fx:id="sharinganPlanet" layoutX="539.0" layoutY="280.0" onMouseMoved="#showInfo" radiusX="100.0" radiusY="54.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1ae80c" />
+                        <Stop color="#a5d037" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Button layoutX="474.0" layoutY="266.0" mnemonicParsing="false" onAction="#sharinganButton" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Sharingan" textFill="#6200eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Ellipse fx:id="mangekyoPlanet" layoutX="204.0" layoutY="155.0" onMouseMoved="#showInfo" radiusX="56.0" radiusY="82.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b20303" />
+                        <Stop color="#1b1b1b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Button layoutX="147.0" layoutY="142.0" mnemonicParsing="false" onAction="#mangekyoButton" prefHeight="10.0" prefWidth="112.0" style="-fx-background-color: transparent;" text="Mangekyo" textFill="#8eff00" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="infoLabel" layoutX="578.0" layoutY="-30.0" prefHeight="221.0" prefWidth="328.0" textFill="#fff800" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Ellipse fx:id="tsukiPlanet" layoutX="355.0" layoutY="393.0" onMouseMoved="#showInfo" radiusX="56.0" radiusY="82.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#9bcdff" />
+                        <Stop color="#1b1b1b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Button layoutX="300.0" layoutY="384.0" mnemonicParsing="false" onAction="#tsukiButton" prefHeight="10.0" prefWidth="112.0" style="-fx-background-color: transparent;" text="Tsuki" textFill="#00ffd6" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
